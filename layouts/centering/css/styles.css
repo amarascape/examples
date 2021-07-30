@@ -1,0 +1,51 @@
+:root {
+  --primary-color: #0898ef;
+  --secondary-color: #230133;
+  --primary-link-color: #fff;
+  --secondary-link-color: #000;
+}
+
+/* Box Model Fix
+https://css-tricks.com/box-sizing/#:~:text=Universal%20Box%20Sizing%20with%20Inheritance
+------------------------------------- */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/* Global Styles
+------------------------------------- */
+html, body, main {
+  height: 100%;
+}
+
+.flex-parent {
+  /* min-height: 100vh; /* height of the browser viewport */ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-parent div {
+  /* width: 80%; */
+}
+
+
+/* Construction Styles
+------------------------------------- */
+html {
+  border: #ff33cc 5px solid;
+}
+
+body {
+  border: yellow 5px solid;
+}
+
+h1, h2, h3, p, section, ul, .btn, img, header, footer, div, main {
+  border: lime 3px solid;
+  background-color: hsla(120, 100%, 50%, 0.2);
+}
