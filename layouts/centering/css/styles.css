@@ -21,6 +21,13 @@ body {
   margin: auto;
 }
 
+/* Final Paragraph in .parent-wrapper
+------------------------------------- */
+
+p:last-of-type {
+  margin: 0;
+}
+
 /* Construction Styles
 ------------------------------------- */
 html {
