@@ -1,39 +1,25 @@
-:root {
-  --primary-color: #0898ef;
-  --secondary-color: #230133;
-  --primary-link-color: #fff;
-  --secondary-link-color: #000;
-}
-
-/* Box Model Fix
-https://css-tricks.com/box-sizing/#:~:text=Universal%20Box%20Sizing%20with%20Inheritance
-------------------------------------- */
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-
 /* Global Styles
 ------------------------------------- */
-html, body, main {
+html{
   height: 100%;
 }
+body {
+  min-height: 100%;
+}
 
-.flex-parent {
-  /* min-height: 100vh; /* height of the browser viewport */ */
+body {
   display: flex;
-  justify-content: center;
   align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
-.flex-parent div {
-  /* width: 80%; */
+.parent-wrapper {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
 }
-
 
 /* Construction Styles
 ------------------------------------- */
@@ -43,6 +29,8 @@ html {
 
 body {
   border: yellow 5px solid;
+  /* background-color: hsla(120, 100%, 50%, 0.2); */
+  background-color: hsl(68, 100%, 93%);
 }
 
 h1, h2, h3, p, section, ul, .btn, img, header, footer, div, main {
